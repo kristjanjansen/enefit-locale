@@ -30,6 +30,9 @@ export default async function Layout({
             <NavLink locale={locale} slug="second/test">
               second/test
             </NavLink>
+            <NavLink locale={locale} slug="second/test/test2">
+              second/test/test2
+            </NavLink>
           </div>
         </div>
         {children}
