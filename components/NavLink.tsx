@@ -7,10 +7,12 @@ export default function NavLink({
   slug,
   locale,
   children,
+  ...rest
 }: {
   slug: string;
   locale: string;
   children: React.ReactNode;
+  [key: string]: any;
 }) {
   const segment = useSelectedLayoutSegment();
   const isActive = slug === segment;
@@ -21,6 +23,7 @@ export default function NavLink({
     <Link
       href={`/${locale}/${slug}`}
       style={{ fontWeight: isActive ? "bold" : "normal" }}
+      {...rest}
     >
       {children}
     </Link>

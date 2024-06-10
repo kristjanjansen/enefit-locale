@@ -1,7 +1,10 @@
 export const frontpageTitles: any = {
   et: "Esileht",
   en: "Frontpage",
+  ru: "Главная страница",
   lv: "Sākumlapa",
+  lt: "Pradinis puslapis",
+  pl: "Strona główna",
 };
 
 export const pageTitles: any = {

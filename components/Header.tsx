@@ -8,10 +8,9 @@ export default function Header(props: { locale: string; slug: string }) {
     <div className="p-8">
       <div className="flex  justify-between">
         <div className="flex gap-4">
-          <NavLink locale={locale} slug="">
+          <NavLink locale={locale} slug="" className="text-[green] !font-bold">
             {site.name}
           </NavLink>
-          <div />
           <NavLink locale={locale} slug="first">
             {pageTitles.first[locale]}
           </NavLink>
