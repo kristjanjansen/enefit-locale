@@ -1,18 +1,15 @@
 import Header from "@/components/Header";
+import { pageTitles } from "@/utils/locale";
+import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
 
 export async function generateStaticParams() {
-  const locales = ["et", "en"].flatMap((locale) => [
+  const locales = site.locales.flatMap((locale) => [
     { locale, slug: ["first"] },
     { locale, slug: ["second"] },
   ]);
   return locales;
 }
-
-const title: any = {
-  first: { et: "Esimene leht", en: "First page" },
-  second: { et: "Teine leht", en: "Second page" },
-};
 
 export default function Page(props: any) {
   const { locale, slug } = props.params;
@@ -20,7 +17,7 @@ export default function Page(props: any) {
     <>
       <Header locale={locale} slug={slug} />
       <div className="p-8 flex flex-col gap-4">
-        <Heading variant="h1">{title[slug][locale]}</Heading>
+        <Heading variant="h1">{pageTitles[slug][locale]}</Heading>
         <pre>{JSON.stringify(props.params)}</pre>
       </div>
     </>

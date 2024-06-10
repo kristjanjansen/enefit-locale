@@ -1,4 +1,6 @@
 import NavLink from "./NavLink";
+import { site } from "../utils/site";
+import { frontpageTitles, pageTitles } from "@/utils/locale";
 
 export default function Header(props: { locale: string; slug: string }) {
   const { locale, slug } = props;
@@ -7,22 +9,22 @@ export default function Header(props: { locale: string; slug: string }) {
       <div className="flex  justify-between">
         <div className="flex gap-4">
           <NavLink locale={locale} slug="">
-            frontpage
+            {site.name}
           </NavLink>
+          <div />
           <NavLink locale={locale} slug="first">
-            first
+            {pageTitles.first[locale]}
           </NavLink>
           <NavLink locale={locale} slug="second">
-            second
+            {pageTitles.second[locale]}
           </NavLink>
         </div>
         <div className="flex gap-4">
-          <NavLink locale="et" slug={slug}>
-            et
-          </NavLink>
-          <NavLink locale="en" slug={slug}>
-            en
-          </NavLink>
+          {site.locales.map((l: string, i: number) => (
+            <NavLink key={i} locale={l} slug={slug}>
+              {l}
+            </NavLink>
+          ))}
         </div>
       </div>
     </div>

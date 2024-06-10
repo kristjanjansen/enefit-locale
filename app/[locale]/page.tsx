@@ -1,16 +1,12 @@
 import Header from "@/components/Header";
 import NavLink from "@/components/NavLink";
+import { frontpageTitles } from "@/utils/locale";
+import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
 
 export async function generateStaticParams() {
-  const locales = [{ locale: "et" }, { locale: "en" }];
-  return locales;
+  return site.locales.map((locale) => ({ locale }));
 }
-
-const title: any = {
-  et: "Esileht",
-  en: "Frontpage",
-};
 
 export default function Index({ params }: { params: any }) {
   const { locale } = params;
@@ -18,7 +14,7 @@ export default function Index({ params }: { params: any }) {
     <>
       <Header locale={locale} slug="" />
       <div className="p-8 flex flex-col gap-4">
-        <Heading variant="h1">{title[locale]}</Heading>
+        <Heading variant="h1">{frontpageTitles[locale]}</Heading>
         <pre>{JSON.stringify(params)}</pre>
       </div>
     </>
