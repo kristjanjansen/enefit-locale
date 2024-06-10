@@ -18,7 +18,7 @@ export default function Header(props: { locale: string; slug: string }) {
             {pageTitles.second[locale]}
           </NavLink>
         </div>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           {Object.entries(site.segments).map(
             ([key, path]: any[], i: number) => (
               <NavLink key={i} locale={locale} slug={path}>
@@ -26,7 +26,7 @@ export default function Header(props: { locale: string; slug: string }) {
               </NavLink>
             )
           )}
-        </div>
+        </div> */}
         <div className="flex gap-4">
           {site.locales.map((l: string, i: number) => (
             <NavLink key={i} locale={l} slug={slug}>

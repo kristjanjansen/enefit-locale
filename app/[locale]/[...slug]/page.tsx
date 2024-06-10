@@ -7,6 +7,10 @@ export async function generateStaticParams() {
   const locales = site.locales.flatMap((locale) => [
     { locale, slug: ["first"] },
     { locale, slug: ["second"] },
+    // ...Object.entries(site.segments).map(([_, path]) => ({
+    //   locale,
+    //   slug: [path],
+    // })),
   ]);
   return locales;
 }
