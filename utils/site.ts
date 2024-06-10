@@ -1,4 +1,4 @@
-const key = "lt_main";
+const key = "green";
 
 const sites = [
   {
@@ -27,6 +27,13 @@ const sites = [
     locales: ["pl"],
     defaultLocale: "pl",
     name: "Enefit Poland",
+    segments: { household: "" },
+  },
+  {
+    key: "green",
+    locales: ["et", "en", "ru", "lv", "lt"],
+    defaultLocale: "et",
+    name: "Enefit Green",
     segments: { household: "" },
   },
 ];
