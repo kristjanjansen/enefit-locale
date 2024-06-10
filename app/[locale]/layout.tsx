@@ -13,25 +13,7 @@ export default async function Layout({
 }) {
   return (
     <html lang={locale} className={inter.className}>
-      <body>
-        <div className="p-8">
-          <div className="flex gap-4">
-            <NavLink locale="et" slug="">
-              et
-            </NavLink>
-            <NavLink locale="en" slug="">
-              en
-            </NavLink>
-            <NavLink locale={locale} slug="first">
-              first
-            </NavLink>
-            <NavLink locale={locale} slug="second">
-              second
-            </NavLink>
-          </div>
-        </div>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

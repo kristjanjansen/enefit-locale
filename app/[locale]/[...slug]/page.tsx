@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { Heading } from "enefit-design-system";
 
 export async function generateStaticParams() {
@@ -8,14 +9,20 @@ export async function generateStaticParams() {
   return locales;
 }
 
-const title: any = { et: "Leht", en: "Page" };
+const title: any = {
+  first: { et: "Esimene leht", en: "First page" },
+  second: { et: "Teine leht", en: "Second page" },
+};
 
 export default function Page(props: any) {
   const { locale, slug } = props.params;
   return (
-    <div className="p-8">
-      <Heading variant="h1">{title[locale]}</Heading>
-      <pre>{JSON.stringify(props.params)}</pre>
-    </div>
+    <>
+      <Header locale={locale} slug={slug} />
+      <div className="p-8 flex flex-col gap-4">
+        <Heading variant="h1">{title[slug][locale]}</Heading>
+        <pre>{JSON.stringify(props.params)}</pre>
+      </div>
+    </>
   );
 }
