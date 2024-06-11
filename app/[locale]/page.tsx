@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
-import NavLink from "@/components/NavLink";
-import { frontpageTitles } from "@/utils/locale";
+import { pages } from "@/utils/pages";
 import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
 
@@ -10,11 +9,12 @@ export async function generateStaticParams() {
 
 export default function Index({ params }: { params: any }) {
   const { locale } = params;
+  const page = pages.find((page: any) => page.frontpage);
   return (
     <>
-      <Header locale={locale} slug="" />
-      <div className="p-8 flex flex-col gap-4">
-        <Heading variant="h1">{frontpageTitles[locale]}</Heading>
+      <Header locale={locale} slug="" segment="household" />
+      <div className="p-8 flex flex-col gap-4 justify-between h-[80vh]">
+        <Heading variant="h1">{page.title[locale]}</Heading>
         <pre>{JSON.stringify(params)}</pre>
       </div>
     </>

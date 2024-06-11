@@ -3,23 +3,23 @@ const key = "ee_main";
 const sites = [
   {
     key: "ee_main",
-    locales: ["et", "en"],
+    locales: ["et", "en", "ru"],
     defaultLocale: "et",
-    name: "Enefit Estonia",
+    name: "enefit.ee",
     segments: { household: "", business: "ari" },
   },
   {
     key: "lv_main",
     locales: ["lv", "ru", "en"],
     defaultLocale: "lv",
-    name: "Enefit Latvia",
+    name: "enefit.lv",
     segments: { household: "", business: "biznesam" },
   },
   {
     key: "lt_main",
     locales: ["lt", "en"],
     defaultLocale: "lt",
-    name: "Enefit Lietuva",
+    name: "enefit.lt",
     segments: { household: "", business: "verslui" },
   },
   {
