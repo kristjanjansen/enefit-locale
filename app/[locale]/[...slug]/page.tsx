@@ -17,9 +17,10 @@ export async function generateStaticParams() {
 
 export default function Page(props: any) {
   const { locale, slug } = props.params;
+  const segments: any = { first: "household", second: "business" };
   return (
     <>
-      <Header locale={locale} slug={slug} />
+      <Header locale={locale} slug={slug} segment={segments[slug]} />
       <div className="p-8 flex flex-col gap-4">
         <Heading variant="h1">{pageTitles[slug][locale]}</Heading>
         <pre>{JSON.stringify(props.params)}</pre>

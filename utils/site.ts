@@ -1,13 +1,19 @@
-const key = "lv_main";
+const key = "ee_main";
 
 const sites = [
+  {
+    key: "ee_main",
+    locales: ["et", "en"],
+    defaultLocale: "et",
+    name: "Enefit Estonia",
+    segments: { household: "", business: "ari" },
+  },
   {
     key: "lv_main",
     locales: ["lv", "ru", "en"],
     defaultLocale: "lv",
     name: "Enefit Latvia",
     segments: { household: "", business: "biznesam" },
-    news: "majai/zinas",
   },
   {
     key: "lt_main",
@@ -15,7 +21,6 @@ const sites = [
     defaultLocale: "lt",
     name: "Enefit Lietuva",
     segments: { household: "", business: "verslui" },
-    news: "privatiems/naujienos",
   },
   {
     key: "pl_main",
@@ -23,7 +28,6 @@ const sites = [
     defaultLocale: "pl",
     name: "Enefit Polska",
     segments: { business: "" },
-    news: "aktualnosci",
   },
   {
     key: "green",
@@ -31,7 +35,6 @@ const sites = [
     defaultLocale: "et",
     name: "Enefit Green",
     segments: { corporate: "" },
-    news: "uudised",
   },
   {
     key: "volt",
@@ -39,7 +42,6 @@ const sites = [
     defaultLocale: "et",
     name: "Enefit Volt",
     segments: { household: "" },
-    blog: "blogi",
   },
 ];
 
