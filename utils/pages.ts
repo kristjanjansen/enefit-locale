@@ -25,7 +25,7 @@ export const pages: any = [
     segment: "household",
   },
   {
-    slug: "business",
+    slug: "ari",
     title: {
       et: "Äriklient",
       en: "Business",
