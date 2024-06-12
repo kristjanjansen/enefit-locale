@@ -24,6 +24,18 @@ export const pages: any = [
     segment: "household",
   },
   {
+    slug: "solar",
+    title: {
+      et: "Päikesepaneelid",
+      en: "Solar panels",
+      ru: "Солнечные панели",
+      lv: "Saules panelis",
+      lt: "Saulės panelės",
+      pl: "Panele słoneczne",
+    },
+    segment: "household",
+  },
+  {
     slug: "ari",
     title: {
       et: "Äriklient",
@@ -35,6 +47,18 @@ export const pages: any = [
     },
     segment: "business",
     frontpage: "true",
+  },
+  {
+    slug: "business/solar",
+    title: {
+      et: "Päikesepaneelid äriklientidele",
+      en: "Business solar",
+      ru: "Солнечные панели для бизнеса",
+      lv: "Saules panelis biznesam",
+      lt: "Verslo saulės panelės",
+      pl: "Panele słoneczne dla biznesu",
+    },
+    segment: "business",
   },
   {
     slug: "business/flex",

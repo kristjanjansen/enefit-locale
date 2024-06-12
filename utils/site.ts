@@ -1,4 +1,4 @@
-const key = "ee_main";
+const key = "green";
 
 const sites = [
   {
@@ -12,7 +12,7 @@ const sites = [
     key: "lv_main",
     locales: ["lv", "ru", "en"],
     defaultLocale: "lv",
-    name: "enefit.lv",
+    name: "enefit.;v",
     segments: { household: "", business: "biznesam" },
   },
   {
@@ -31,7 +31,7 @@ const sites = [
   },
   {
     key: "green",
-    locales: ["et", "en", "ru", "lv", "lt"],
+    locales: ["et", "en", "ru", "lv", "lt"], // pl is for testing
     defaultLocale: "et",
     name: "Enefit Green",
     segments: { corporate: "" },

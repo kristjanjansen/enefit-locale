@@ -15,11 +15,10 @@ export async function generateStaticParams() {
 
 export default function Page({ params }: { params: any }) {
   const { locale, slug } = params;
-  console.log(slug);
   const page = pages.find((page: any) => page.slug === slug.join("/"));
   return (
     <>
-      <Header locale={locale} slug={slug} segment={page.segment} />
+      <Header locale={locale} slug={slug.join("/")} segment={page.segment} />
       <div className="p-8 flex flex-col gap-4">
         <Heading variant="h1">{page.title[locale]}</Heading>
         <pre className="opacity-25">

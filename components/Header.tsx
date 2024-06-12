@@ -30,7 +30,7 @@ export default function Header(props: {
               </NavLink>
             ))}
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-12">
           <div className="flex gap-4">
             {pages
               .filter((page: any) => page.frontpage)
