@@ -1,4 +1,4 @@
-const key = "volt_main";
+const key = process.env.NEXT_PUBLIC_SITE || "ee_main";
 
 import ee_main from "./pages/ee_main";
 import lv_main from "./pages/lv_main";
@@ -14,7 +14,6 @@ const sites = [
     defaultLocale: "et",
     name: "enefit.ee",
     pages: ee_main,
-    //segments: { household: "", business: "ari" },
   },
   {
     key: "lv_main",
@@ -22,7 +21,6 @@ const sites = [
     defaultLocale: "lv",
     name: "enefit.lv",
     pages: lv_main,
-    // segments: { household: "", business: "biznesam" },
   },
   {
     key: "lt_main",
@@ -30,7 +28,6 @@ const sites = [
     defaultLocale: "lt",
     name: "enefit.lt",
     pages: lt_main,
-    //segments: { household: "", business: "verslui" },
   },
   {
     key: "pl_main",
@@ -38,7 +35,6 @@ const sites = [
     defaultLocale: "pl",
     name: "enefit.pl",
     pages: pl_main,
-    //segments: { business: "" },
   },
   {
     key: "green_main",
@@ -46,7 +42,6 @@ const sites = [
     defaultLocale: "et",
     name: "enefitgreen.com",
     pages: green_main,
-    //segments: { corporate: "" },
   },
   {
     key: "volt_main",
@@ -54,7 +49,6 @@ const sites = [
     defaultLocale: "et",
     name: "enefitvolt.ee",
     pages: volt_main,
-    //segments: { household: "" },
   },
 ];
 

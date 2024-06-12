@@ -17,8 +17,6 @@ export default function NavLink({
   const segment = useSelectedLayoutSegment();
   const isActive = slug === segment;
 
-  console.log(segment);
-
   return (
     <Link
       href={`/${locale}/${slug}`}

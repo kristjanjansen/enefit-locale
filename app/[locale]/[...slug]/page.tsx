@@ -10,7 +10,6 @@ export async function generateStaticParams() {
       .filter((page: any) => page.slug)
       .map((page: any) => ({ locale, slug: page.slug.split("/") }))
   );
-  console.log(locales);
   return locales;
 }
 
