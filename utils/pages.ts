@@ -2,12 +2,11 @@ export const pages: any = [
   {
     slug: "",
     title: {
-      et: "Esileht",
-      en: "First page",
-      ru: "Первая страница",
-      lv: "Pirmā lapa",
-      lt: "Pirmas puslapis",
-      pl: "Pierwsza strona",
+      et: "Eraklient",
+      en: "Household",
+      ru: "Частный клиент",
+      lv: "Mājas",
+      lt: "Privatiems",
     },
     segment: "household",
     frontpage: true,
@@ -35,6 +34,7 @@ export const pages: any = [
       pl: "Biznes",
     },
     segment: "business",
+    frontpage: "true",
   },
   {
     slug: "business/flex",
