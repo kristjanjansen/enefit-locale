@@ -14,12 +14,12 @@ export default function Header(props: {
   const segments = pages.filter((page: any) => page.frontpage);
   return (
     <div className="p-8">
-      <div className="flex  justify-between">
-        <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row justify-between gap-4">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-4">
           <NavLink
             locale={locale}
             slug={frontpage.slug}
-            className="text-[green] !font-bold"
+            className="text-[green] !font-bold whitespace-nowrap"
           >
             {site.name} ({segment || frontpage.segment})
           </NavLink>
@@ -31,8 +31,8 @@ export default function Header(props: {
               </NavLink>
             ))}
         </div>
-        <div className="flex gap-12">
-          <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-12">
+          <div className="flex flex-col md:flex-row gap-1 md:gap-4">
             {segments.length > 1 &&
               segments.map((page: any, i: number) => (
                 <NavLink key={i} locale={locale} slug={page.slug}>

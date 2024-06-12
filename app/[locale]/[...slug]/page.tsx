@@ -20,9 +20,9 @@ export default function Page({ params }: { params: any }) {
   return (
     <>
       <Header locale={locale} slug={slug.join("/")} segment={page.segment} />
-      <div className="p-8 flex flex-col gap-4">
+      <div className="p-8 flex flex-col gap-4 *:break-all">
         <Heading variant="h1">{page.title[locale]}</Heading>
-        <pre className="opacity-25">
+        <pre className="opacity-25 overflow-auto">
           {JSON.stringify({ params, page }, null, 2)}
         </pre>
       </div>
