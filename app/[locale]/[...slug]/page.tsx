@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import { pageTitles } from "@/utils/locale";
 import { pages } from "@/utils/pages";
 import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
@@ -23,7 +22,9 @@ export default function Page({ params }: { params: any }) {
       <Header locale={locale} slug={slug} segment={page.segment} />
       <div className="p-8 flex flex-col gap-4">
         <Heading variant="h1">{page.title[locale]}</Heading>
-        <pre>{JSON.stringify({ params, page }, null, 2)}</pre>
+        <pre className="opacity-25">
+          {JSON.stringify({ params, page }, null, 2)}
+        </pre>
       </div>
     </>
   );
