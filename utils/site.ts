@@ -1,6 +1,8 @@
 const key = process.env.NEXT_PUBLIC_SITE || "ee_main";
 
 import ee_main from "./pages/ee_main";
+import ee_corporate from "./pages/ee_corporate";
+import ee_industry from "./pages/ee_industry";
 import lv_main from "./pages/lv_main";
 import lt_main from "./pages/lt_main";
 import pl_main from "./pages/pl_main";
@@ -14,6 +16,20 @@ const sites = [
     defaultLocale: "et",
     name: "enefit.ee",
     pages: ee_main,
+  },
+  {
+    key: "ee_corporate",
+    locales: ["et", "en", "ru"],
+    defaultLocale: "et",
+    name: "enefit.com",
+    pages: ee_corporate,
+  },
+  {
+    key: "ee_industry",
+    locales: ["et", "en", "ru"],
+    defaultLocale: "et",
+    name: "industry.enefit.com",
+    pages: ee_industry,
   },
   {
     key: "lv_main",
