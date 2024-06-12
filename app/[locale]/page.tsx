@@ -13,7 +13,7 @@ export default function Page({ params }: { params: any }) {
   const page = pages.find((page: any) => page.frontpage);
   return (
     <>
-      <Header locale={locale} slug="" segment="household" />
+      <Header locale={locale} slug="" segment={page.segment} />
       <div className="p-8 flex flex-col gap-4">
         <Heading variant="h1">{page.title[locale]}</Heading>
         <pre className="opacity-25">
