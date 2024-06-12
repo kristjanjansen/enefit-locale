@@ -1,6 +1,5 @@
 import NavLink from "./NavLink";
 import { site } from "../utils/site";
-import { links, pageTitles, segmentTitles } from "@/utils/locale";
 import { pages } from "@/utils/pages";
 
 export default function Header(props: {
@@ -40,12 +39,6 @@ export default function Header(props: {
                   {page.title[locale]}
                 </NavLink>
               ))}
-            {/* {segments.length > 1 &&
-            segments.map(([key, path]: any[], i: number) => (
-              <NavLink key={i} locale={locale} slug={path}>
-                {segmentTitles[key][locale]}
-              </NavLink>
-            ))} */}
           </div>
           <div className="flex gap-4">
             {site.locales.map((l: string, i: number) => (
