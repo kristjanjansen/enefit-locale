@@ -1,6 +1,6 @@
 import NavLink from "./NavLink";
 import { site } from "../utils/site";
-import { pages } from "@/utils/pages";
+const pages = site.pages;
 
 export default function Header(props: {
   locale: string;

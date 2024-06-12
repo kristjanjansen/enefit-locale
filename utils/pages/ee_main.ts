@@ -1,4 +1,4 @@
-export const pages: any = [
+const pages: any = [
   {
     slug: "",
     title: {
@@ -73,3 +73,5 @@ export const pages: any = [
     segment: "business",
   },
 ];
+
+export default pages;

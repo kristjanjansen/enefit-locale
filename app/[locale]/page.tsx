@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
-import { pages } from "@/utils/pages";
 import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
+
+const pages = site.pages;
 
 export async function generateStaticParams() {
   return site.locales.map((locale) => ({ locale }));
