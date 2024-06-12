@@ -1,4 +1,4 @@
-const key = "lv_main";
+const key = "lt_main";
 
 import ee_main from "./pages/ee_main";
 import lv_main from "./pages/lv_main";
