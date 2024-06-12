@@ -9,13 +9,14 @@ import pl_main from "./pages/pl_main";
 import green_main from "./pages/green_main";
 import volt_main from "./pages/volt_main";
 
-const sites = [
+export const sites = [
   {
     key: "ee_main",
     locales: ["et", "en", "ru"],
     defaultLocale: "et",
     name: "enefit.ee",
     pages: ee_main,
+    demo: "https://ee-main.pages.dev",
   },
   {
     key: "ee_corporate",
@@ -23,6 +24,7 @@ const sites = [
     defaultLocale: "et",
     name: "enefit.com",
     pages: ee_corporate,
+    demo: "https://ee-corporate.pages.dev",
   },
   {
     key: "ee_industry",
@@ -30,6 +32,7 @@ const sites = [
     defaultLocale: "et",
     name: "industry.enefit.com",
     pages: ee_industry,
+    demo: "https://ee-industry.pages.dev",
   },
   {
     key: "lv_main",
@@ -37,6 +40,7 @@ const sites = [
     defaultLocale: "lv",
     name: "enefit.lv",
     pages: lv_main,
+    demo: "https://lv-main.pages.dev",
   },
   {
     key: "lt_main",
@@ -44,6 +48,7 @@ const sites = [
     defaultLocale: "lt",
     name: "enefit.lt",
     pages: lt_main,
+    demo: "https://lt-main.pages.dev",
   },
   {
     key: "pl_main",
@@ -51,6 +56,7 @@ const sites = [
     defaultLocale: "pl",
     name: "enefit.pl",
     pages: pl_main,
+    demo: "https://pl-main.pages.dev",
   },
   {
     key: "green_main",
@@ -58,6 +64,7 @@ const sites = [
     defaultLocale: "et",
     name: "enefitgreen.com",
     pages: green_main,
+    demo: "https://green-main.pages.dev",
   },
   {
     key: "volt_main",
@@ -65,6 +72,7 @@ const sites = [
     defaultLocale: "et",
     name: "enefitvolt.ee",
     pages: volt_main,
+    demo: "https://volt-main.pages.dev",
   },
 ];
 

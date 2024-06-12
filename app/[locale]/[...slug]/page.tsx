@@ -1,3 +1,4 @@
+import Demo from "@/components/Demo";
 import Header from "@/components/Header";
 import { site } from "@/utils/site";
 import { Heading } from "enefit-design-system";
@@ -25,6 +26,7 @@ export default function Page({ params }: { params: any }) {
           {JSON.stringify({ params, page }, null, 2)}
         </pre>
       </div>
+      <Demo />
     </>
   );
 }
